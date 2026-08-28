@@ -21,7 +21,7 @@ const [error, setError] = useState("");
   const fetchStats = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/graph-stats"
+        "https://wexa-cognodb-careergraph-rt1l.onrender.com/api/graph-stats"
       );
 
       setStats(response.data.stats);
@@ -36,7 +36,7 @@ const [error, setError] = useState("");
     const fetchJobs = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/jobs"
+        "https://wexa-cognodb-careergraph-rt1l.onrender.com/api/jobs"
       );
 
       setJobs(response.data.jobs);
@@ -49,7 +49,7 @@ const [error, setError] = useState("");
     const fetchRecommendations = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/recommendations/Pranav%20Rao"
+        "https://wexa-cognodb-careergraph-rt1l.onrender.com/api/recommendations/Pranav%20Rao"
       );
 
       setRecommendations(response.data.recommendations);
@@ -60,7 +60,7 @@ const [error, setError] = useState("");
   const fetchGraphData = async () => {
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/graph/Pranav%20Rao"
+      "https://wexa-cognodb-careergraph-rt1l.onrender.com/api/graph/Pranav%20Rao"
     );
 
     setGraphData(response.data.graph);
@@ -77,7 +77,7 @@ const [error, setError] = useState("");
 
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/jobs/skill/${encodeURIComponent(
+      `https://wexa-cognodb-careergraph-rt1l.onrender.com/api/jobs/skill/${encodeURIComponent(
         skillSearch
       )}`
     );
